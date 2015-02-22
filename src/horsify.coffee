@@ -1,9 +1,9 @@
 # Description:
-#   A way to interact with the Google Images API.
+#   Put a horse on it. Add a horses head to any picture.
 #
 # Commands:
-#   hubot mustache me <url> - Adds a mustache to the specified URL.
-#   hubot mustache me <query> - Searches Google Images for the specified query and mustaches it.
+#   hubot horsify me <url> - Adds a horse to the specified URL.
+#   hubot horsify me <query> - Searches Google Images for the specified query and puts a horse on it.
 
 module.exports = (robot) ->
 
