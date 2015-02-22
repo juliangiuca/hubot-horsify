@@ -7,8 +7,8 @@
 
 module.exports = (robot) ->
 
-  robot.respond /horsify me (.*) (\w+)?/i, (msg) ->
-    horseface = "http://horseface.me/horsify?url="
+  robot.respond /horsify me (.*)/i, (msg) ->
+    horseface = "http://horsify.me/horsify?url="
     imagery = msg.match[1]
 
     if imagery.match /^https?:\/\//i
