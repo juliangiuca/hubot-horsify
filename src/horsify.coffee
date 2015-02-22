@@ -7,7 +7,7 @@
 
 module.exports = (robot) ->
 
-  robot.respond /horsify me (.*)/i, (msg) ->
+  robot.respond /horsify me (.*) (\w+)?/i, (msg) ->
     horseface = "http://horseface.me/horsify?url="
     imagery = msg.match[1]
 
@@ -28,11 +28,4 @@ imageMe = (msg, query, cb) ->
       images = images.responseData?.results
       if images?.length > 0
         image = msg.random images
-        cb ensureImageExtension image.unescapedUrl
-
-ensureImageExtension = (url) ->
-  ext = url.split('.').pop()
-  if /(png|jpe?g|gif)/i.test(ext)
-    url
-  else
-    "#{url}#.png"
+        cb image.unescapedUrl
