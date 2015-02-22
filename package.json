@@ -1,37 +1,30 @@
 {
   "name": "hubot-horsify",
   "description": "Finds a face, and puts a horse on it",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Julian Giuca <julian.giuca@gmail.com>",
   "license": "MIT",
-
   "keywords": [
     "hubot",
     "hubot-scripts"
   ],
-
   "repository": {
     "type": "git",
     "url": "git://github.com/juliangiuca/hubot-horsify.git"
   },
-
   "bugs": {
     "url": "https://github.com/juliangiuca/hubot-horsify/issues"
   },
-
   "dependencies": {
     "coffee-script": "~1.6"
   },
-
   "devDependencies": {
     "mocha": "*",
     "chai": "*",
     "sinon-chai": "*",
     "sinon": "*"
   },
-
   "main": "index.coffee",
-
   "scripts": {
     "test": "script/test"
   }
